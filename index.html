@@ -58,9 +58,16 @@
         <a href="https://buy.stripe.com/dR64iK2ZE1DNcuI001" target="_blank" style="background-color: #008CBA; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; display: block; width: fit-content; margin: 20px auto;">Supporta la nostra organizzazione non profit che mira alla pace nel mondo</a>
     </footer>
     <script>
-        document.querySelector("a[href='https://buy.stripe.com/dR64iK2ZE1DNcuI001']").onclick = function() {
-            window.open("https://buy.stripe.com/dR64iK2ZE1DNcuI001", "_blank");
-        };
+        document.querySelector("a[href='https://buy.stripe.com/dR64iK2ZE1DNcuI001']").addEventListener("click", function(event) {
+            event.preventDefault(); // Impedisce il comportamento predefinito del link
+            var newWindow = window.open("https://buy.stripe.com/dR64iK2ZE1DNcuI001", "_blank");
+            if (newWindow) {
+                newWindow.opener = null; // Impedisce al nuovo popup di accedere all'opener (questa finestra)
+            } else {
+                // Fallback per i browser che bloccano la finestra pop-up
+                window.location.href = "https://buy.stripe.com/dR64iK2ZE1DNcuI001";
+            }
+        });
     </script>
 </body>
 </html>
