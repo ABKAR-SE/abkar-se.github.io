@@ -11,15 +11,7 @@ body {
     position: relative; /* Posizione relativa per consentire la sovrapposizione */
 }
 
-/* Trasparenza sull'overlay */
-/*body::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Trasparenza sull'overlay */
+
 }
 
 /* Effetto di dissolvenza in entrata per il contenuto */
