@@ -12,7 +12,7 @@ body {
 }
 
 /* Trasparenza sull'overlay */
-body::after {
+/*body::after {
     content: "";
     position: absolute;
     top: 0;
