@@ -1,6 +1,6 @@
 /* Reset dei margini e dei padding per il corpo del documento */
 body {
-    margin: 20px; /* Aggiungo un margine di 20px su tutti i lati del corpo del documento */
+    margin: 0;
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-image: url('https://abkar-se.github.io/epic-legendary-masterpiece-max-insane-resolution-real-photo-ultra-dynamic-scene-fishey-lens5-l-943622396.png'); /* Sostituisci con il percorso dell'immagine di sfondo */
@@ -26,7 +26,6 @@ body::after {
 main {
     opacity: 0;
     transition: opacity 0.5s ease; /* Aggiungi una transizione per un effetto fluido */
-    padding: 20px; /* Aggiungo spazio intorno al contenuto principale */
 }
 
 main.loaded {
@@ -36,16 +35,11 @@ main.loaded {
 /* Effetto ombra per l'intestazione */
 header {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Aggiungi un'ombra sottile all'intestazione */
-    padding: 20px; /* Aggiungo spazio intorno all'intestazione */
-    text-align: center; /* Centra il testo nell'intestazione */
 }
 
 /* Bordi arrotondati per le sezioni */
 section {
     border-radius: 10px; /* Arrotonda i bordi delle sezioni */
-    padding: 20px; /* Aggiungo spazio intorno ad ogni sezione */
-    margin-bottom: 20px; /* Aggiungo uno spazio di 20px sotto ogni sezione */
-    text-align: justify; /* Giustifica il testo all'interno delle sezioni */
 }
 
 /* Effetto di sfocatura al passaggio del mouse sui link */
