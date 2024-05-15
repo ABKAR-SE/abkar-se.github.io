@@ -31,19 +31,23 @@
     </footer>
     <script>
         document.addEventListener("DOMContentLoaded", function() {
-            document.querySelector("a[href='https://buy.stripe.com/dR64iK2ZE1DNcuI001']").addEventListener("click", function(event) {
+            var stripeLink = document.querySelector("a[href='https://buy.stripe.com/dR64iK2ZE1DNcuI001']");
+            var twitterLink = document.querySelector("a[href='https://twitter.com/sonosolosimba']");
+            var telegramLink = document.querySelector("a[href='https://t.me/elgrandeoskar']");
+
+            stripeLink.addEventListener("click", function(event) {
                 event.preventDefault();
-                window.open("https://buy.stripe.com/dR64iK2ZE1DNcuI001", "_blank");
+                window.open(stripeLink.href, "_blank");
             });
 
-            document.querySelector("a[href='https://twitter.com/sonosolosimba']").addEventListener("click", function(event) {
+            twitterLink.addEventListener("click", function(event) {
                 event.preventDefault();
-                window.open("https://twitter.com/sonosolosimba", "_blank");
+                window.open(twitterLink.href, "_blank");
             });
 
-            document.querySelector("a[href='https://t.me/elgrandeoskar']").addEventListener("click", function(event) {
+            telegramLink.addEventListener("click", function(event) {
                 event.preventDefault();
-                window.open("https://t.me/elgrandeoskar", "_blank");
+                window.open(telegramLink.href, "_blank");
             });
         });
     </script>
