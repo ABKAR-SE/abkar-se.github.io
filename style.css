@@ -37,6 +37,7 @@ main.loaded {
 header {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Aggiungi un'ombra sottile all'intestazione */
     padding: 20px; /* Aggiungo spazio intorno all'intestazione */
+    text-align: center; /* Centra il testo nell'intestazione */
 }
 
 /* Bordi arrotondati per le sezioni */
@@ -44,6 +45,7 @@ section {
     border-radius: 10px; /* Arrotonda i bordi delle sezioni */
     padding: 20px; /* Aggiungo spazio intorno ad ogni sezione */
     margin-bottom: 20px; /* Aggiungo uno spazio di 20px sotto ogni sezione */
+    text-align: justify; /* Giustifica il testo all'interno delle sezioni */
 }
 
 /* Effetto di sfocatura al passaggio del mouse sui link */
