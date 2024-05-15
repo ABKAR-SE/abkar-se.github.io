@@ -1,0 +1,83 @@
+/* Reset dei margini e dei padding per il corpo del documento */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa; /* Colore di sfondo */
+    color: #333; /* Colore del testo principale */
+}
+
+/* Stili per l'intestazione */
+header {
+    background-color: #343a40; /* Colore di sfondo */
+    color: #fff; /* Colore del testo */
+    padding: 20px; /* Spaziatura interna */
+    text-align: center; /* Allineamento al centro del testo */
+}
+
+header h1 {
+    margin: 0; /* Rimozione del margine superiore del titolo */
+    font-size: 36px; /* Dimensione del testo */
+}
+
+/* Stili per il contenuto principale */
+main {
+    padding: 20px; /* Spaziatura interna */
+}
+
+/* Stili per le sezioni */
+section {
+    margin-bottom: 40px; /* Margine inferiore per separare le sezioni */
+}
+
+/* Stili per i titoli delle sezioni */
+h2, h3 {
+    color: #007bff; /* Colore del testo */
+    text-align: center; /* Allineamento al centro del testo */
+}
+
+/* Stili per i paragrafi */
+p {
+    line-height: 1.6; /* Altezza della riga */
+}
+
+/* Stili per gli elenchi */
+ul {
+    list-style-type: disc; /* Tipo di elenco a pallini */
+    padding-left: 20px; /* Spaziatura interna a sinistra */
+}
+
+/* Stili per i link */
+a {
+    color: #dc3545; /* Colore del link */
+    text-decoration: none; /* Rimozione della sottolineatura predefinita */
+    transition: color 0.3s ease; /* Transizione del colore al passaggio del mouse */
+}
+
+a:hover {
+    color: #28a745; /* Colore del link al passaggio del mouse */
+}
+
+/* Stili per il piè di pagina */
+footer {
+    background-color: #343a40; /* Colore di sfondo */
+    color: #fff; /* Colore del testo */
+    padding: 20px; /* Spaziatura interna */
+    text-align: center; /* Allineamento al centro del testo */
+}
+
+/* Stili per i pulsanti */
+.button {
+    display: inline-block;
+    background-color: #28a745; /* Colore di sfondo */
+    color: #fff; /* Colore del testo */
+    padding: 10px 20px; /* Spaziatura interna */
+    border: none; /* Rimozione del bordo */
+    border-radius: 5px; /* Arrotondamento dei bordi */
+    cursor: pointer; /* Cambio del cursore al passaggio del mouse */
+    transition: background-color 0.3s ease; /* Transizione del colore di sfondo */
+}
+
+.button:hover {
+    background-color: #218838; /* Cambio del colore di sfondo al passaggio del mouse */
+}
