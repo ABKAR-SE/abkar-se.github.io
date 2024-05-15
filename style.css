@@ -3,13 +3,16 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f8f9fa; /* Colore di sfondo */
+    background-image: url('https://abkar-se.github.io/epic-legendary-masterpiece-max-insane-resolution-real-photo-ultra-dynamic-scene-fishey-lens5-l-943622396.png'); /* Percorso dell'immagine di sfondo */
+    background-size: cover; /* Fai in modo che l'immagine copra l'intero background */
+    background-position: center; /* Centra l'immagine */
+    background-repeat: no-repeat; /* Evita la ripetizione dell'immagine */
     color: #333; /* Colore del testo principale */
 }
 
 /* Stili per l'intestazione */
 header {
-    background-color: #343a40; /* Colore di sfondo */
+    background-color: rgba(0, 0, 0, 0.5); /* Sfondo scuro traslucido */
     color: #fff; /* Colore del testo */
     padding: 20px; /* Spaziatura interna */
     text-align: center; /* Allineamento al centro del testo */
@@ -32,7 +35,7 @@ section {
 
 /* Stili per i titoli delle sezioni */
 h2, h3 {
-    color: #007bff; /* Colore del testo */
+    color: #fff; /* Colore del testo */
     text-align: center; /* Allineamento al centro del testo */
 }
 
@@ -60,7 +63,7 @@ a:hover {
 
 /* Stili per il piè di pagina */
 footer {
-    background-color: #343a40; /* Colore di sfondo */
+    background-color: rgba(0, 0, 0, 0.5); /* Sfondo scuro traslucido */
     color: #fff; /* Colore del testo */
     padding: 20px; /* Spaziatura interna */
     text-align: center; /* Allineamento al centro del testo */
