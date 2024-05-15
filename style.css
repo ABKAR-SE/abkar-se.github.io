@@ -11,8 +11,6 @@ body {
     position: relative; /* Posizione relativa per consentire la sovrapposizione */
 }
 
-
-
 /* Effetto di dissolvenza in entrata per il contenuto */
 main {
     opacity: 0;
@@ -74,7 +72,6 @@ document.querySelector("a[href='https://t.me/elgrandeoskar']").onclick = functio
     window.open("https://t.me/elgrandeoskar", "_blank");
 };
 
-
 /* Effetto di colore casuale al passaggio del mouse */
 a:hover {
     color: rgb(random(255), random(255), random(255)); /* Genera un colore casuale */
@@ -98,4 +95,9 @@ a:hover {
 /* Effetto di colore al passaggio del mouse */
 a:hover {
     color: #ff0000; /* Cambia il colore del testo del link al passaggio del mouse */
+}
+
+/* Rimuovi effetto di sfocatura al passaggio del mouse sul tasto Stripe */
+a[href='https://buy.stripe.com/dR64iK2ZE1DNcuI001']:hover {
+    filter: none; /* Rimuovi l'effetto di sfocatura */
 }
