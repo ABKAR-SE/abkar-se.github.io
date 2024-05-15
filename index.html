@@ -22,33 +22,55 @@
     </header>
     <main class="loaded">
         <section>
-            <!-- Contenuto delle sezioni... -->
+            <h2>Välkommen till Abkär AB - Ledande inom Innovativ Elektronik och Globalt Samarbete</h2>
+            <h3>Om oss</h3>
+            <p>Abkär AB är en branschledande icke-vinstdrivande organisation som specialiserar sig på avancerad elektronik, elektroteknik och globalt samarbete. Vi arbetar dygnet runt för att bygga en gemenskap som omfamnar elektronisk innovation och strävar efter att nå nya höjder inom teknisk utveckling och globalt samarbete.</p>
         </section>
-        <!-- Altre sezioni... -->
+        <section>
+            <h3>Vår Vision</h3>
+            <p>Vår vision är att stoppa hungern i världen, minska miljöföroreningar och höja livskvaliteten till nya nivåer genom innovativa lösningar och expertis från vårt team. Vi tror på att använda avancerade algoritmer och näst intill obegränsad beräkningskraft för att lösa de mest komplexa utmaningarna som världen står inför.</p>
+        </section>
+        <section>
+            <h3>Våra Projekt</h3>
+            <ul>
+                <li>Matförsörjning för alla: Utveckling av avancerade elektroniska system för att öka livsmedelsproduktionen och främja hållbara jordbruksmetoder.</li>
+                <li>Miljövänliga teknologier: Forskning och utveckling av elektroniska apparater som minskar koldioxidutsläpp och främjar en grönare planet.</li>
+                <li>Hälsosam livsstil och välbefinnande: Användning av avancerad teknik för att övervaka och förbättra människors hälsa och välbefinnande över hela världen.</li>
+            </ul>
+        </section>
+        <section>
+            <h3>Hur du kan bidra</h3>
+            <p>Om du delar vår passion för att göra en verklig skillnad i världen, finns det flera sätt du kan bidra till vår verksamhet. Du kan bli volontär för våra projekt, ge en donation för att stödja vårt arbete eller bli en samarbetspartner för att gemensamt skapa nya innovativa lösningar. Kontakta oss för att lära dig mer om hur du kan vara en del av vårt team och vår mission.</p>
+        </section>
+        <section>
+            <h3>Kontakta oss</h3>
+            <p>För mer information om Abkär AB och våra projekt, tveka inte att kontakta oss:</p>
+            <ul>
+                <li>E-post: <a href="mailto:obm98@outlook.it">obm98@outlook.it</a></li>
+                <li>Telefon: +46 762342886</li>
+                <li>Följ oss på <a href="https://twitter.com/sonosolosimba" target="_blank">Twitter: @sonosolosimba</a> och <a href="https://t.me/elgrandeoskar" target="_blank">Telegram: @elgrandeoskar</a></li>
+            </ul>
+        </section>
     </main>
     <footer>
-        <!-- Contenuto del footer... -->
+        <p>Licens: Källkoden för denna webbplats är licensierad under MIT-licensen. För mer information om licensen, se filen LICENSE.md i detta repository.</p>
+        <!-- Pulsante per supportare l'organizzazione non profit -->
+        <a href="https://buy.stripe.com/dR64iK2ZE1DNcuI001" target="_blank" style="background-color: #008CBA; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; display: block; width: fit-content; margin: 20px auto;">Supporta la nostra organizzazione non profit che mira alla pace nel mondo</a>
     </footer>
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            var stripeLink = document.querySelector("a[href='https://buy.stripe.com/dR64iK2ZE1DNcuI001']");
-            var twitterLink = document.querySelector("a[href='https://twitter.com/sonosolosimba']");
-            var telegramLink = document.querySelector("a[href='https://t.me/elgrandeoskar']");
+        document.querySelector("a[href='https://buy.stripe.com/dR64iK2ZE1DNcuI001']").addEventListener("click", function(event) {
+            event.preventDefault(); // Impedisce il comportamento predefinito del link
+            window.open("https://buy.stripe.com/dR64iK2ZE1DNcuI001", "_blank");
+        });
 
-            stripeLink.addEventListener("click", function(event) {
-                event.preventDefault();
-                window.open(stripeLink.href, "_blank");
-            });
+        document.querySelector("a[href='https://twitter.com/sonosolosimba']").addEventListener("click", function(event) {
+            event.preventDefault(); // Impedisce il comportamento predefinito del link
+            window.open("https://twitter.com/sonosolosimba", "_blank");
+        });
 
-            twitterLink.addEventListener("click", function(event) {
-                event.preventDefault();
-                window.open(twitterLink.href, "_blank");
-            });
-
-            telegramLink.addEventListener("click", function(event) {
-                event.preventDefault();
-                window.open(telegramLink.href, "_blank");
-            });
+        document.querySelector("a[href='https://t.me/elgrandeoskar']").addEventListener("click", function(event) {
+            event.preventDefault(); // Impedisce il comportamento predefinito del link
+            window.open("https://t.me/elgrandeoskar", "_blank");
         });
     </script>
 </body>
