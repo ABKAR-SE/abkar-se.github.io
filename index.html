@@ -4,6 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LIBAX</title>
+    <!-- Codice AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2717204377458669" crossorigin="anonymous"></script>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({
+        google_ad_client: "ca-pub-2717204377458669",
+        enable_page_level_ads: true
+      });
+    </script>
+    <!-- Fine del codice AdSense -->
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
@@ -45,8 +54,31 @@
     </main>
     <footer>
         <p>Licens: Källkoden för denna webbplats är licensierad under MIT-licensen. För mer information om licensen, se filen LICENSE.md i detta repository.</p>
-        <a href="https://buy.stripe.com/dR64iK2ZE1DNcuI001" target="_blank" id="stripeButton">Supporta la nostra organizzazione non profit che mira alla pace nel mondo</a>
+        <!-- Pulsante per supportare l'organizzazione non profit -->
+        <a href="https://buy.stripe.com/dR64iK2ZE1DNcuI001" target="_blank" style="background-color: #008CBA; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; display: block; width: fit-content; margin: 20px auto;">Supporta la nostra organizzazione non profit che mira alla pace nel mondo</a>
     </footer>
-    <script src="script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Aggiungi l'evento di click al pulsante di Stripe
+            var stripeButton = document.querySelector("a[href='https://buy.stripe.com/dR64iK2ZE1DNcuI001']");
+            if (stripeButton) {
+                stripeButton.addEventListener("click", function(event) {
+                    event.preventDefault(); // Impedisce il comportamento predefinito del link
+                    openStripeWindow("https://buy.stripe.com/dR64iK2ZE1DNcuI001");
+                });
+            }
+
+            // Funzione per aprire una finestra di Stripe
+            function openStripeWindow(url) {
+                var newWindow = window.open(url, "_blank");
+                if (newWindow) {
+                    newWindow.opener = null; // Impedisce al nuovo popup di accedere all'opener (questa finestra)
+                } else {
+                    // Fallback per i browser che bloccano la finestra pop-up
+                    window.location.href = url;
+                }
+            }
+        });
+    </script>
 </body>
 </html>
