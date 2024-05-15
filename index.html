@@ -7,10 +7,10 @@
     <!-- Codice AdSense -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2717204377458669" crossorigin="anonymous"></script>
     <script>
-        (adsbygoogle = window.adsbygoogle || []).push({
-            google_ad_client: "ca-pub-2717204377458669",
-            enable_page_level_ads: true
-        });
+      (adsbygoogle = window.adsbygoogle || []).push({
+        google_ad_client: "ca-pub-2717204377458669",
+        enable_page_level_ads: true
+      });
     </script>
     <!-- Fine del codice AdSense -->
     <link rel="stylesheet" type="text/css" href="style.css">
@@ -60,17 +60,13 @@
     <script>
         document.querySelector("a[href='https://buy.stripe.com/dR64iK2ZE1DNcuI001']").addEventListener("click", function(event) {
             event.preventDefault(); // Impedisce il comportamento predefinito del link
-            window.open("https://buy.stripe.com/dR64iK2ZE1DNcuI001", "_blank");
-        });
-
-        document.querySelector("a[href='https://twitter.com/sonosolosimba']").addEventListener("click", function(event) {
-            event.preventDefault(); // Impedisce il comportamento predefinito del link
-            window.open("https://twitter.com/sonosolosimba", "_blank");
-        });
-
-        document.querySelector("a[href='https://t.me/elgrandeoskar']").addEventListener("click", function(event) {
-            event.preventDefault(); // Impedisce il comportamento predefinito del link
-            window.open("https://t.me/elgrandeoskar", "_blank");
+            var newWindow = window.open("https://buy.stripe.com/dR64iK2ZE1DNcuI001", "_blank");
+            if (newWindow) {
+                newWindow.opener = null; // Impedisce al nuovo popup di accedere all'opener (questa finestra)
+            } else {
+                // Fallback per i browser che bloccano la finestra pop-up
+                window.location.href = "https://buy.stripe.com/dR64iK2ZE1DNcuI001";
+            }
         });
     </script>
 </body>
