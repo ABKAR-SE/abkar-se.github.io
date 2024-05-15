@@ -3,84 +3,120 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-image: url('https://abkar-se.github.io/epic-legendary-masterpiece-max-insane-resolution-real-photo-ultra-dynamic-scene-fishey-lens5-l-943622396.png'); /* Percorso dell'immagine di sfondo */
+    background-image: url('https://abkar-se.github.io/epic-legendary-masterpiece-max-insane-resolution-real-photo-ultra-dynamic-scene-fishey-lens5-l-943622396.png'); /* Sostituisci con il percorso dell'immagine di sfondo */
     background-size: cover; /* Fai in modo che l'immagine copra l'intero background */
     background-position: center; /* Centra l'immagine */
     background-repeat: no-repeat; /* Evita la ripetizione dell'immagine */
-    color: #333; /* Colore del testo principale */
+    color: #fff; /* Colore del testo principale */
+    position: relative; /* Posizione relativa per consentire la sovrapposizione */
 }
 
-/* Stili per l'intestazione */
-header {
-    background-color: rgba(0, 0, 0, 0.5); /* Sfondo scuro traslucido */
-    color: #fff; /* Colore del testo */
-    padding: 20px; /* Spaziatura interna */
-    text-align: center; /* Allineamento al centro del testo */
+/* Trasparenza sull'overlay */
+body::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Trasparenza sull'overlay */
 }
 
-header h1 {
-    margin: 0; /* Rimozione del margine superiore del titolo */
-    font-size: 36px; /* Dimensione del testo */
-}
-
-/* Stili per il contenuto principale */
+/* Effetto di dissolvenza in entrata per il contenuto */
 main {
-    padding: 20px; /* Spaziatura interna */
+    opacity: 0;
+    transition: opacity 0.5s ease; /* Aggiungi una transizione per un effetto fluido */
 }
 
-/* Stili per le sezioni */
+main.loaded {
+    opacity: 1; /* Dissolvenza in entrata */
+}
+
+/* Effetto ombra per l'intestazione */
+header {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Aggiungi un'ombra sottile all'intestazione */
+}
+
+/* Bordi arrotondati per le sezioni */
 section {
-    margin-bottom: 40px; /* Margine inferiore per separare le sezioni */
+    border-radius: 10px; /* Arrotonda i bordi delle sezioni */
 }
 
-/* Stili per i titoli delle sezioni */
-h2, h3 {
-    color: #fff; /* Colore del testo */
-    text-align: center; /* Allineamento al centro del testo */
-}
-
-/* Stili per i paragrafi */
-p {
-    line-height: 1.6; /* Altezza della riga */
-}
-
-/* Stili per gli elenchi */
-ul {
-    list-style-type: disc; /* Tipo di elenco a pallini */
-    padding-left: 20px; /* Spaziatura interna a sinistra */
-}
-
-/* Stili per i link */
+/* Effetto di sfocatura al passaggio del mouse sui link */
 a {
-    color: #dc3545; /* Colore del link */
-    text-decoration: none; /* Rimozione della sottolineatura predefinita */
-    transition: color 0.3s ease; /* Transizione del colore al passaggio del mouse */
+    transition: filter 0.3s ease; /* Aggiungi una transizione per un effetto fluido */
 }
 
 a:hover {
-    color: #28a745; /* Colore del link al passaggio del mouse */
+    filter: blur(2px); /* Sfocatura al passaggio del mouse */
 }
 
-/* Stili per il piè di pagina */
-footer {
-    background-color: rgba(0, 0, 0, 0.5); /* Sfondo scuro traslucido */
-    color: #fff; /* Colore del testo */
-    padding: 20px; /* Spaziatura interna */
-    text-align: center; /* Allineamento al centro del testo */
-}
-
-/* Stili per i pulsanti */
+/* Animazione al passaggio del mouse per gli elementi */
 .button {
-    display: inline-block;
-    background-color: #28a745; /* Colore di sfondo */
-    color: #fff; /* Colore del testo */
-    padding: 10px 20px; /* Spaziatura interna */
-    border: none; /* Rimozione del bordo */
-    border-radius: 5px; /* Arrotondamento dei bordi */
-    cursor: pointer; /* Cambio del cursore al passaggio del mouse */
-    transition: background-color 0.3s ease; /* Transizione del colore di sfondo */
+    transition: transform 0.3s ease; /* Aggiungi una transizione per un effetto fluido */
 }
 
 .button:hover {
-    background-color: #218838; /* Cambio del colore di sfondo al passaggio del mouse */
+    transform: scale(1.1); /* Ingrandisci leggermente il pulsante al passaggio del mouse */
+}
+
+/* Effetto di sfocatura all'avvio della pagina */
+@keyframes blurIn {
+    from {
+        filter: blur(10px);
+        opacity: 0;
+    }
+    to {
+        filter: blur(0);
+        opacity: 1;
+    }
+}
+
+main.loaded {
+    animation: blurIn 1s ease forwards; /* Applica l'animazione all'elemento principale */
+}
+
+/* Effetto di colore casuale al passaggio del mouse */
+a:hover {
+    color: rgb(random(255), random(255), random(255)); /* Genera un colore casuale */
+}
+
+/* Effetto di zoom al passaggio del mouse */
+a:hover {
+    transform: scale(1.2); /* Ingrandisci il link al passaggio del mouse */
+}
+
+/* Effetto di sfumatura al passaggio del mouse */
+a:hover {
+    background-image: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,1)); /* Aggiungi una sfumatura al link al passaggio del mouse */
+}
+
+/* Effetto di bordi rotondi al passaggio del mouse */
+a:hover {
+    border-radius: 50%; /* Rendi i bordi rotondi al passaggio del mouse */
+}
+
+/* Effetto di ruotamento al passaggio del mouse */
+a:hover {
+    transform: rotate(360deg); /* Ruota il link di 360 gradi al passaggio del mouse */
+}
+
+/* Effetto di trasparenza al passaggio del mouse */
+a:hover {
+    opacity: 0.7; /* Riduci leggermente la trasparenza del link al passaggio del mouse */
+}
+
+/* Effetto di sfumatura radiale al passaggio del mouse */
+a:hover {
+    background-image: radial-gradient(circle, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8) 100%); /* Aggiungi una sfumatura radiale al link al passaggio del mouse */
+}
+
+/* Effetto di ridimensionamento al passaggio del mouse */
+a:hover {
+    transform: scale(1.5); /* Ingrandisci il link al passaggio del mouse */
+}
+
+/* Effetto di colore al passaggio del mouse */
+a:hover {
+    color: #ff0000; /* Cambia il colore del testo del link al passaggio del mouse */
 }
