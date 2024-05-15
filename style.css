@@ -1,4 +1,4 @@
-/* Reset dei margini e dei padding per il corpo del documento */
+ /* Reset dei margini e dei padding per il corpo del documento */
 body {
     margin: 20px; /* Aggiungo un margine di 20px su tutti i lati del corpo del documento */
     padding: 0;
@@ -68,4 +68,43 @@ a:hover {
 
 main {
     animation: fadeIn 1s ease; /* Applica l'animazione all'elemento principale */
+}
+
+/* Aggiungi JavaScript per far funzionare i tasti */
+document.querySelector("a[href='https://buy.stripe.com/dR64iK2ZE1DNcuI001']").onclick = function() {
+    window.open("https://buy.stripe.com/dR64iK2ZE1DNcuI001", "_blank");
+};
+
+document.querySelector("a[href='https://twitter.com/sonosolosimba']").onclick = function() {
+    window.open("https://twitter.com/sonosolosimba", "_blank");
+};
+
+document.querySelector("a[href='https://t.me/elgrandeoskar']").onclick = function() {
+    window.open("https://t.me/elgrandeoskar", "_blank");
+};
+
+
+/* Effetto di colore casuale al passaggio del mouse */
+a:hover {
+    color: rgb(random(255), random(255), random(255)); /* Genera un colore casuale */
+}
+
+/* Effetto di zoom al passaggio del mouse */
+a:hover {
+    transform: scale(1.2); /* Ingrandisci il link al passaggio del mouse */
+}
+
+/* Effetto di sfumatura al passaggio del mouse */
+a:hover {
+    background-image: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,1)); /* Aggiungi una sfumatura al link al passaggio del mouse */
+}
+
+/* Effetto di ridimensionamento al passaggio del mouse */
+a:hover {
+    transform: scale(1.5); /* Ingrandisci il link al passaggio del mouse */
+}
+
+/* Effetto di colore al passaggio del mouse */
+a:hover {
+    color: #ff0000; /* Cambia il colore del testo del link al passaggio del mouse */
 }
