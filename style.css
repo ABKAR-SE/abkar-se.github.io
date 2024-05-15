@@ -26,6 +26,8 @@ body::after {
 main {
     opacity: 0;
     transition: opacity 0.5s ease; /* Aggiungi una transizione per un effetto fluido */
+    padding: 20px; /* Aggiungi spazio intorno al contenuto */
+    box-sizing: border-box; /* Assicurati che il padding sia incluso nella larghezza totale */
 }
 
 main.loaded {
@@ -35,11 +37,15 @@ main.loaded {
 /* Effetto ombra per l'intestazione */
 header {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Aggiungi un'ombra sottile all'intestazione */
+    padding: 20px; /* Aggiungi spazio intorno all'intestazione */
 }
 
 /* Bordi arrotondati per le sezioni */
 section {
     border-radius: 10px; /* Arrotonda i bordi delle sezioni */
+    margin-bottom: 20px; /* Aggiungi spazio tra le sezioni */
+    padding: 20px; /* Aggiungi spazio intorno alle sezioni */
+    background-color: rgba(0, 0, 0, 0.5); /* Sfondo leggermente trasparente */
 }
 
 /* Effetto di sfocatura al passaggio del mouse sui link */
@@ -51,29 +57,18 @@ a:hover {
     filter: blur(2px); /* Sfocatura al passaggio del mouse */
 }
 
-/* Animazione al passaggio del mouse per gli elementi */
-.button {
-    transition: transform 0.3s ease; /* Aggiungi una transizione per un effetto fluido */
-}
-
-.button:hover {
-    transform: scale(1.1); /* Ingrandisci leggermente il pulsante al passaggio del mouse */
-}
-
-/* Effetto di sfocatura all'avvio della pagina */
-@keyframes blurIn {
+/* Effetto di dissolvenza all'avvio della pagina */
+@keyframes fadeIn {
     from {
-        filter: blur(10px);
         opacity: 0;
     }
     to {
-        filter: blur(0);
         opacity: 1;
     }
 }
 
-main.loaded {
-    animation: blurIn 1s ease forwards; /* Applica l'animazione all'elemento principale */
+main {
+    animation: fadeIn 1s ease; /* Applica l'animazione all'elemento principale */
 }
 
 /* Effetto di colore casuale al passaggio del mouse */
