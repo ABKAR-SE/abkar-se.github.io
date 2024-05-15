@@ -101,3 +101,8 @@ a:hover {
 a[href='https://buy.stripe.com/dR64iK2ZE1DNcuI001']:hover {
     filter: none; /* Rimuovi l'effetto di sfocatura */
 }
+
+/* Effetto di sfocatura al passaggio del mouse sui link, ma non sul testo */
+a:hover:not([href='https://buy.stripe.com/dR64iK2ZE1DNcuI001']) {
+    filter: blur(2px); /* Sfocatura al passaggio del mouse */
+}
