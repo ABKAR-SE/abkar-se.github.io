@@ -1,953 +1,408 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Atlas Valley - Revolutionary autonomous ecosystem powered by AI, advanced electronics, and sustainable technology. Building the future of self-sufficient living.">
-    <meta name="keywords" content="Atlas Valley, autonomous living, AI, sustainable technology, renewable energy, global collaboration">
-    <meta name="author" content="Pantheraleo - Atlas Valley">
-    <meta property="og:title" content="Atlas Valley - Powering the Future of Autonomy">
-    <meta property="og:description" content="Revolutionary autonomous ecosystem building self-sufficient, AI-driven communities worldwide.">
-    <meta property="og:image" content="resources/images/logo.jpg">
-    <meta property="og:url" content="https://abkar-se.github.io">
-    <link rel="stylesheet" href="resources/css/style.css">
-    <title>Atlas Valley - Powering the Future of Autonomy</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;600;700&family=Source+Code+Pro:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <meta name="google-adsense-account" content="ca-pub-8526978991021905">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8526978991021905"
-     crossorigin="anonymous"></script>
+<html lang="it"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Atlas Valley — Arbetsschema &amp; Lön 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+  --bg:#050a14;--surface:#0a1628;--surface2:#0f1f3d;--border:#1a3a6e;
+  --text:#e0f0ff;--muted:#6a8aaa;--cyan:#00e5ff;--green:#39ff14;
+  --input-bg:#070e1a;--input-border:#1a3a6e;--input-color:#00e5ff;
+  --row-hover:#0a1e3a;--row-weekend-color:#6a8aaa;--today-bg:#001a2e;
+  --thead-bg:#07101f;--tfoot-bg:#0f1f3d;--header-bg:#0a1628;
+  --controls-bg:#07101f;--tab-inactive:#07101f;--tab-active:#0a1628;
+  --scard-bg:#0a1628;--export-bg:#0f1f3d;
+  --note-color:#a0b8d0;--acc-color:#e0a060;--paga-color:#a0c0e0;
+  background:var(--bg);color:var(--text);font-family:'Exo 2',sans-serif;min-height:100vh;
+}
+body.light{
+  --bg:#f4f6fa;--surface:#ffffff;--surface2:#e8eef8;--border:#c0cde0;
+  --text:#1a2a3a;--muted:#7a8fa8;--cyan:#0066cc;--green:#1a7a00;
+  --input-bg:#ffffff;--input-border:#b0c0d8;--input-color:#0055aa;
+  --row-hover:#e8f0fa;--row-weekend-color:#9aabbf;--today-bg:#e0f0ff;
+  --thead-bg:#e0e8f4;--tfoot-bg:#d8e4f4;--header-bg:#1a3a6e;
+  --controls-bg:#eef2f8;--tab-inactive:#dde6f4;--tab-active:#ffffff;
+  --scard-bg:#ffffff;--export-bg:#1a3a6e;
+  --note-color:#5a7090;--acc-color:#a05a00;--paga-color:#405a80;
+  background:var(--bg);color:var(--text);
+}
+body.light .logo-text{color:#ffffff}
+body.light .logo-sub{color:#a0c0e0}
+body.light .badge{background:#0f2a5e;border-color:#0055aa44;color:#ffffff}
+body.light .tab{color:#5a7090}
+body.light .tab.active{color:#0055aa;border-color:#0066cc55}
+body.light .export-btn{background:#1a3a6e;color:#ffffff;border-color:#0055aa}
+body.light .export-btn:hover{background:#0f2a5e}
+body.light .theme-toggle{background:#e8eef8;border-color:#b0c0d8;color:#1a2a3a}
+body.light .month-title{color:#0055aa}
+body.light .mstat span{color:#1a7a00}
+body.light td.computed{color:#1a7a00}
+body.light td.total-dovuto{color:#0055aa}
+body.light .tfoot-row td.sum-ore{color:#1a7a00}
+body.light .tfoot-row td.sum-tot{color:#0055aa}
+body.light .scard-name{color:#0055aa}
+body.light .scard-val{color:#1a7a00}
+body.light .scard-val.blue{color:#0055aa}
+body.light .netto-fill{background:linear-gradient(90deg,#0066cc,#1a7a00)}
+body.light tbody tr:hover{background:var(--row-hover)}
+
+.header{background:var(--header-bg);border-bottom:1px solid var(--border);padding:18px 24px;display:flex;align-items:center;gap:16px}
+.logo-text{font-family:'Orbitron',sans-serif;font-weight:900;font-size:18px;color:var(--cyan);letter-spacing:3px}
+.logo-sub{font-family:'Exo 2',sans-serif;font-size:11px;color:var(--muted);letter-spacing:2px;text-transform:uppercase;margin-top:2px}
+.badge{background:var(--surface2);border:1px solid #00e5ff22;color:var(--cyan);font-size:10px;font-family:'Orbitron',sans-serif;padding:3px 10px;border-radius:2px;letter-spacing:1px}
+.theme-toggle-wrap{margin-left:auto;display:flex;align-items:center;gap:10px}
+.theme-toggle{display:flex;align-items:center;gap:8px;background:var(--surface2);border:1px solid var(--border);color:var(--muted);font-family:'Orbitron',sans-serif;font-size:9px;letter-spacing:2px;padding:6px 14px;border-radius:2px;cursor:pointer;transition:all .2s;user-select:none}
+.theme-toggle:hover{border-color:var(--cyan);color:var(--text)}
+.toggle-dot{width:28px;height:14px;background:var(--surface2);border:1px solid var(--border);border-radius:7px;position:relative;transition:background .2s}
+.toggle-dot::after{content:'';position:absolute;top:2px;left:2px;width:9px;height:9px;border-radius:50%;background:var(--muted);transition:all .2s}
+body:not(.light) .toggle-dot{background:var(--cyan)22;border-color:var(--cyan)55}
+body:not(.light) .toggle-dot::after{background:var(--cyan);left:15px}
+
+.controls{display:flex;gap:10px;padding:14px 24px;background:var(--controls-bg);border-bottom:1px solid var(--border);flex-wrap:wrap;align-items:center}
+.ctrl-label{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:1px;margin-right:4px}
+select,input[type=number],input[type=text],input[type=time]{background:var(--input-bg);border:1px solid var(--input-border);color:var(--text);font-family:'Exo 2',sans-serif;font-size:13px;padding:6px 12px;border-radius:3px;outline:none;cursor:pointer}
+select:focus,input:focus{border-color:var(--cyan)55}
+
+.tab-bar{display:flex;gap:2px;padding:12px 24px 0;background:var(--bg);flex-wrap:wrap}
+.tab{padding:8px 20px;font-family:'Orbitron',sans-serif;font-size:11px;letter-spacing:2px;cursor:pointer;border:1px solid var(--border);border-bottom:none;background:var(--tab-inactive);color:var(--muted);transition:all .2s;border-radius:3px 3px 0 0}
+.tab.active{background:var(--tab-active);color:var(--cyan);border-color:var(--cyan)55}
+.tab:hover:not(.active){color:var(--text);background:var(--surface)}
+
+.content{padding:20px 24px}
+.month-block{margin-bottom:28px;border:1px solid var(--border);border-radius:4px;overflow:hidden}
+.month-header{background:var(--surface2);border-bottom:1px solid var(--border);padding:10px 16px;display:flex;justify-content:space-between;align-items:center}
+.month-title{font-family:'Orbitron',sans-serif;font-size:12px;letter-spacing:3px;color:var(--cyan)}
+.month-stats{display:flex;gap:20px}
+.mstat{font-size:11px;color:var(--muted)}
+.mstat span{color:var(--green);font-weight:600}
+
+table{width:100%;border-collapse:collapse;font-size:12px}
+thead th{background:var(--thead-bg);color:var(--muted);font-family:'Orbitron',sans-serif;font-size:9px;letter-spacing:2px;padding:7px 8px;text-align:center;border-bottom:1px solid var(--border);font-weight:400}
+tbody tr{border-bottom:1px solid var(--surface2);transition:background .15s}
+tbody tr:hover{background:var(--row-hover)}
+tbody tr.weekend td{color:var(--row-weekend-color)}
+tbody tr.today td{background:var(--today-bg)}
+td{padding:5px 8px;text-align:center;vertical-align:middle}
+td.day-name{text-align:left;color:var(--muted);font-size:11px;min-width:80px}
+td.day-name.workday{color:var(--text)}
+td input[type=time],td input[type=number],td input[type=text]{background:var(--input-bg);border:1px solid var(--input-border);color:var(--input-color);font-family:'Exo 2',sans-serif;font-size:12px;padding:3px 6px;width:100%;text-align:center;border-radius:2px;outline:none}
+td input:focus{border-color:var(--cyan);background:var(--surface)}
+td input[type=number].paga{color:var(--paga-color)}
+td input[type=number].acc{color:var(--acc-color)}
+td.computed{color:var(--green);font-weight:600;font-size:12px}
+td.total-dovuto{color:var(--cyan);font-weight:600}
+td.note-cell input{text-align:left;color:var(--note-color);font-size:11px}
+.tfoot-row td{background:var(--tfoot-bg);color:var(--text);font-family:'Orbitron',sans-serif;font-size:10px;letter-spacing:1px;padding:8px;border-top:1px solid var(--border)}
+.tfoot-row td.sum-ore{color:var(--green);font-weight:700}
+.tfoot-row td.sum-tot{color:var(--cyan);font-weight:700}
+
+.summary-panel{display:grid;grid-template-columns:1fr;gap:16px;margin-bottom:24px}
+.scard{background:var(--scard-bg);border:1px solid var(--border);border-radius:4px;padding:16px 20px}
+.scard-name{font-family:'Orbitron',sans-serif;font-size:11px;color:var(--cyan);letter-spacing:2px;margin-bottom:12px}
+.scard-row{display:flex;justify-content:space-between;align-items:center;padding:5px 0;border-bottom:1px solid var(--surface2);font-size:12px}
+.scard-row:last-child{border-bottom:none}
+.scard-label{color:var(--muted)}
+.scard-val{color:var(--green);font-weight:600;font-family:'Orbitron',sans-serif;font-size:11px}
+.scard-val.blue{color:var(--cyan)}
+.netto-bar{margin-top:12px;height:3px;background:var(--border);border-radius:2px}
+.netto-fill{height:100%;background:linear-gradient(90deg,var(--cyan),var(--green));border-radius:2px;transition:width .5s}
+
+.footer-bar{background:var(--controls-bg);border-top:1px solid var(--border);padding:8px 24px;display:flex;justify-content:space-between;align-items:center;font-size:10px;color:var(--muted);font-family:'Orbitron',sans-serif;letter-spacing:1px}
+.export-btn{background:var(--export-bg);border:1px solid var(--cyan)44;color:var(--cyan);font-family:'Orbitron',sans-serif;font-size:9px;letter-spacing:2px;padding:6px 14px;border-radius:2px;cursor:pointer;transition:all .2s}
+.export-btn:hover{background:var(--cyan)11;border-color:var(--cyan)}
+
+@media print{
+  .controls,.tab-bar,.footer-bar,.theme-toggle-wrap,.export-btn{display:none!important}
+  body{background:#fff!important;color:#000!important}
+  .month-block{border:1px solid #ccc!important;break-inside:avoid}
+  .month-header{background:#e8eef8!important}
+  .month-title{color:#003399!important}
+  thead th{background:#e0e8f4!important;color:#444!important}
+  td.computed{color:#007700!important}
+  td.total-dovuto{color:#003399!important}
+  .tfoot-row td{background:#d8e4f4!important}
+}
+</style>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <img src="resources/images/logo.jpg" alt="Atlas Valley Logo" class="logo-img">
-                <span class="logo-text">ATLAS VALLEY</span>
-            </div>
-            <ul class="nav-menu">
-                <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#milestones" class="nav-link">Milestones</a></li>
-                <li><a href="#voltark" class="nav-link">VOLTARK</a></li>
-                <li><a href="#gallery" class="nav-link">Gallery</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-        </div>
-    </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-background">
-            <div class="particles"></div>
-        </div>
-        <div class="hero-content">
-            <div class="hero-text">
-                <h1 class="hero-title">
-                    <span class="typing-text">ATLAS VALLEY</span>
-                </h1>
-                <h2 class="hero-subtitle"> Powering the Future of Autonomy </h2>
-                <p class="hero-description">
-                    Revolutionary autonomous ecosystem building self-sufficient, AI-driven communities worldwide. 
-                    Join us in creating a sustainable future through cutting-edge technology and global collaboration.
-                </p>
-                <div class="hero-buttons">
-                    <button class="btn btn-primary" onclick="scrollToSection('about')">
-                        <i class="fas fa-rocket"></i> Explore Our Vision
-                    </button>
-                    <button class="btn btn-secondary" onclick="scrollToSection('contact')">
-                        <i class="fas fa-handshake"></i> Join Our Mission
-                    </button>
-                </div>
-            </div>
-            <div class="hero-visual">
-                <div class="floating-elements">
-                    <div class="element element-1"><i class="fas fa-microchip"></i></div>
-                    <div class="element element-2"><i class="fas fa-leaf"></i></div>
-                    <div class="element element-3"><i class="fas fa-robot"></i></div>
-                    <div class="element element-4"><i class="fas fa-solar-panel"></i></div>
-                </div>
-            </div>
-        </div>
-        <div class="scroll-indicator">
-            <div class="scroll-arrow"></div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">About Atlas Valley</h2>
-                <p class="section-subtitle">Leading in Innovative Electronics and Global Collaboration</p>
-            </div>
-            
-            <!-- Welcome Section -->
-            <div class="welcome-section">
-                <div class="welcome-content">
-                    <h3 class="welcome-title">🌟 Welcome to Atlas Valley 🚀</h3>
-                    <p class="welcome-text">
-                        Atlas Valley is an industry-leading 🏆 non-profit ❤️ organization specializing in advanced electronics ⚡, 
-                        electrical engineering 🛠️, and global collaboration 🌏. We work around the clock 🌙💼 to build a community 🤗 
-                        that embraces electronic innovation 🤖⚙️ and strives to reach new heights 🚀 in technological development 
-                        and global cooperation 🌎.
-                    </p>
-                </div>
-            </div>
-            
-            <div class="about-grid">
-                <div class="about-card">
-                    <div class="card-icon">
-                        <i class="fas fa-globe-americas"></i>
-                    </div>
-                    <h3>Global Vision</h3>
-                    <p>Building self-sufficient communities across Stockholm, Milan, Verona, and expanding worldwide to create a network of autonomous ecosystems.</p>
-                </div>
-                
-                <div class="about-card">
-                    <div class="card-icon">
-                        <i class="fas fa-brain"></i>
-                    </div>
-                    <h3>AI-Powered Systems</h3>
-                    <p>Advanced algorithms and unlimited computational power solving the world's most complex challenges through intelligent automation.</p>
-                </div>
-                
-                <div class="about-card">
-                    <div class="card-icon">
-                        <i class="fas fa-leaf"></i>
-                    </div>
-                    <h3>Sustainable Future</h3>
-                    <p>Cutting-edge renewable energy solutions, smart water purification, and sustainable harvesting technology for a greener planet.</p>
-                </div>
-            </div>
-
-            <!-- Our Vision Section -->
-            <div class="vision-section">
-                <h3 class="vision-title">🎯 Our Vision 🎯</h3>
-                <div class="vision-content">
-                    <p class="vision-text">
-                        💡 Our vision is to end world hunger 🍽️❌, reduce environmental pollution 🌱🚯, and raise the quality of life 📈🏡 
-                        to new levels 🚀 through innovative solutions 🧠💡 and the expertise of our team 👨‍🔬👩‍💻. We believe in harnessing 
-                        advanced algorithms 🤖📊 and nearly unlimited computing power 🔥💻 to solve the most complex challenges 🔄🌎 facing the world.
-                    </p>
-                </div>
-            </div>
-
-            <!-- Our Projects Section -->
-            <div class="projects-overview">
-                <h3 class="projects-title">🚀 Our Projects 🚀</h3>
-                <div class="projects-grid-overview">
-                    <div class="project-item">
-                        <div class="project-icon">🍏</div>
-                        <h4>Food Supply for All 🍞</h4>
-                        <p>💡 Developing advanced electronic systems 🛠️⚙️ to increase food production 🌾🌽 and promote sustainable farming methods 🚜🌱.</p>
-                    </div>
-                    <div class="project-item">
-                        <div class="project-icon">🌱</div>
-                        <h4>Eco-Friendly Technologies 🌍</h4>
-                        <p>🧪 Research and development of electronic devices 🔋💡 that reduce carbon emissions 🌿🚗 and foster a greener planet 🌎🌳.</p>
-                    </div>
-                    <div class="project-item">
-                        <div class="project-icon">💙</div>
-                        <h4>Healthy Lifestyle and Well-being 🏃‍♂️🧘‍♀️</h4>
-                        <p>📡 Using advanced technology 🤖 to monitor 👀 and improve 📊 people's health 💓 and well-being 🌟 worldwide 🌍.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- How to Contribute Section -->
-            <div class="contribute-section">
-                <h3 class="contribute-title">🤝 How You Can Contribute 🤝</h3>
-                <p class="contribute-text">
-                    If you share our passion ❤️🔥 for making a real difference in the world 🌎, there are several ways you can support 🎁 our mission:
-                </p>
-                <div class="contribute-options">
-                    <div class="contribute-item">
-                        <i class="fas fa-check-circle"></i>
-                        <span>Become a volunteer 🤗 and help us in our projects!</span>
-                    </div>
-                    <div class="contribute-item">
-                        <i class="fas fa-check-circle"></i>
-                        <span>Make a donation 💰 to support our work!</span>
-                    </div>
-                    <div class="contribute-item">
-                        <i class="fas fa-check-circle"></i>
-                        <span>Partner with us 🤝 to create innovative new solutions 🔬!</span>
-                    </div>
-                </div>
-                <p class="contact-cta">
-                    📩 Contact us to learn more about how you can become part of our team 👨‍💻👩‍🔬 and our mission 🚀.
-                </p>
-            </div>
-
-            <div class="mission-section">
-                <h3> Our Mission</h3>
-                <div class="mission-content">
-                    <p> Our vision is to eliminate world hunger , reduce environmental pollution , and elevate quality of life  to new levels  through innovative solutions  and expertise from our global team .</p>
-                    
-                    <div class="mission-stats">
-                        <div class="stat">
-                            <span class="stat-number">15+</span>
-                            <span class="stat-label">Countries</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-number">24/7</span>
-                            <span class="stat-label">Innovation</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-number infinity">&infin;</span>
-                            <span class="stat-label">Possibilities</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Our Revolutionary Projects</h2>
-                <p class="section-subtitle">Building the future, one innovation at a time</p>
-            </div>
-
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-image">
-                        <i class="fas fa-seedling"></i>
-                    </div>
-                    <div class="project-content">
-                        <h3> Global Food Security</h3>
-                        <p>Advanced electronic systems increasing food production and promoting sustainable agricultural methods worldwide.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">AI Agriculture</span>
-                            <span class="tech-tag">Smart Irrigation</span>
-                            <span class="tech-tag">Crop Optimization</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <i class="fas fa-wind"></i>
-                    </div>
-                    <div class="project-content">
-                        <h3> Green Technologies</h3>
-                        <p>Research and development of electronic devices reducing carbon emissions and promoting a greener planet.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Renewable Energy</span>
-                            <span class="tech-tag">Carbon Capture</span>
-                            <span class="tech-tag">Clean Tech</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <i class="fas fa-heartbeat"></i>
-                    </div>
-                    <div class="project-content">
-                        <h3> Health & Wellbeing</h3>
-                        <p>Advanced technology monitoring and improving human health and wellbeing worldwide through intelligent systems.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Health AI</span>
-                            <span class="tech-tag">Biomonitoring</span>
-                            <span class="tech-tag">Preventive Care</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Milestones Section -->
-    <section id="milestones" class="milestones">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">🛠️ Work History & Development Timeline</h2>
-                <p class="section-subtitle">Atlas Valley is an ambitious project dedicated to revolutionizing autonomous living 🌍🏡</p>
-            </div>
-
-            <div class="milestones-intro">
-                <p class="milestones-description">
-                    With bases in Stockholm, Sweden 🇸🇪 and multiple cities in northern Italy 🇮🇹 (Milan, Verona, and beyond), 
-                    our team is laying the foundations for a fully self-sustaining, AI-driven ecosystem 🤖🔆.
-                </p>
-            </div>
-
-            <div class="milestones-timeline">
-                <div class="timeline-item completed">
-                    <div class="timeline-marker">
-                        <i class="fas fa-check-circle"></i>
-                    </div>
-                    <div class="timeline-content">
-                        <h3 class="timeline-title">✅ Concept & Vision Development (Completed)</h3>
-                        <div class="timeline-details">
-                            <div class="timeline-point">
-                                <span class="point-icon">🔹</span>
-                                <span>Defined core principles: self-sufficiency, automation, and sustainability.</span>
-                            </div>
-                            <div class="timeline-point">
-                                <span class="point-icon">🔹</span>
-                                <span>Established the Atlas Valley blueprint for modular, scalable bases.</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="timeline-item ongoing">
-                    <div class="timeline-marker">
-                        <i class="fas fa-cog fa-spin"></i>
-                    </div>
-                    <div class="timeline-content">
-                        <h3 class="timeline-title">✅ Research & Technology Exploration (Ongoing)</h3>
-                        <div class="timeline-details">
-                            <div class="timeline-point">
-                                <span class="point-icon">🔹</span>
-                                <span>Developing cutting-edge renewable energy solutions 🔆 (solar, wind, hydrogen).</span>
-                            </div>
-                            <div class="timeline-point">
-                                <span class="point-icon">🔹</span>
-                                <span>AI-driven systems for real-time resource monitoring & automation 🧠.</span>
-                            </div>
-                            <div class="timeline-point">
-                                <span class="point-icon">🔹</span>
-                                <span>Smart water purification & sustainable harvesting technology 💧🌱.</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="timeline-item upcoming">
-                    <div class="timeline-marker">
-                        <i class="fas fa-users"></i>
-                    </div>
-                    <div class="timeline-content">
-                        <h3 class="timeline-title">📍 Global Team Expansion (Upcoming)</h3>
-                        <div class="timeline-details">
-                            <div class="timeline-point">
-                                <span class="point-icon">🔹</span>
-                                <span>Selecting top-tier engineers, designers & AI specialists worldwide 🌎.</span>
-                            </div>
-                            <div class="timeline-point">
-                                <span class="point-icon">🔹</span>
-                                <span>Expanding operations in Spain 🇪🇸, France 🇫🇷, Germany 🇩🇪, Netherlands 🇳🇱, Belgium 🇧🇪, Denmark 🇩🇰, Norway 🇳🇴, Finland 🇫🇮, Morocco 🇲🇦, Albania 🇦🇱, and Turkey 🇹🇷 through strategic collaborations.</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="timeline-item future">
-                    <div class="timeline-marker">
-                        <i class="fas fa-flask"></i>
-                    </div>
-                    <div class="timeline-content">
-                        <h3 class="timeline-title">📍 Prototype Development & Testing (202X)</h3>
-                        <div class="timeline-details">
-                            <div class="timeline-point">
-                                <span class="point-icon">🔹</span>
-                                <span>First small-scale Atlas Valley units to be constructed.</span>
-                            </div>
-                            <div class="timeline-point">
-                                <span class="point-icon">🔹</span>
-                                <span>Testing autonomous power, security, and AI-driven systems.</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="timeline-item future">
-                    <div class="timeline-marker">
-                        <i class="fas fa-rocket"></i>
-                    </div>
-                    <div class="timeline-content">
-                        <h3 class="timeline-title">🌟 Global Expansion & Large-Scale Construction (Future)</h3>
-                        <div class="timeline-details">
-                            <div class="timeline-point">
-                                <span class="point-icon">🔹</span>
-                                <span>Scaling production of Atlas Valley hubs worldwide.</span>
-                            </div>
-                            <div class="timeline-point">
-                                <span class="point-icon">🔹</span>
-                                <span>Establishing partnerships for mass deployment & community integration.</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="milestones-footer">
-                <p class="milestones-cta">
-                    This is just the beginning—Atlas Valley is shaping the future! 🚀🔥
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- VOLTARK Protocol Section -->
-    <section id="voltark" class="voltark">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">⚡️ $ARKV VOLTARK Protocol ⚡️</h2>
-                <p class="section-subtitle">The Future of Autonomous Living - Powered by Blockchain</p>
-            </div>
-
-            <!-- Protocol Launch -->
-            <div class="protocol-launch">
-                <div class="launch-content">
-                    <h3 class="launch-title">🌌 Welcome to the Pulse of the Valley 🌌</h3>
-                    <p class="launch-description">
-                        Dear pioneers, visionaries, and digital rebels... You've felt it. A vibration in the code. 
-                        A whisper in the chain. A signal that something bigger than us all is awakening.
-                    </p>
-                    <div class="launch-features">
-                        <div class="feature-item">
-                            <i class="fas fa-broadcast-tower"></i>
-                            <span>Real-time updates • Blockchain connected</span>
-                        </div>
-                        <div class="feature-item">
-                            <i class="fas fa-shield-alt"></i>
-                            <span>Zero risk of rugs and scams</span>
-                        </div>
-                        <div class="feature-item">
-                            <i class="fas fa-brain"></i>
-                            <span>AI-driven innovation</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Token Overview -->
-            <div class="token-overview">
-                <div class="overview-grid">
-                    <div class="overview-card">
-                        <div class="card-icon">
-                            <i class="fas fa-coins"></i>
-                        </div>
-                        <h3>$ARKV Token</h3>
-                        <p>More than just a cryptocurrency – it's a real-world asset project built to drive the future of sustainable living.</p>
-                    </div>
-                    <div class="overview-card">
-                        <div class="card-icon">
-                            <i class="fas fa-leaf"></i>
-                        </div>
-                        <h3>Sustainability</h3>
-                        <p>Founded on principles of long-term sustainability with renewable energy and eco-friendly solutions.</p>
-                    </div>
-                    <div class="overview-card">
-                        <div class="card-icon">
-                            <i class="fas fa-robot"></i>
-                        </div>
-                        <h3>AI Integration</h3>
-                        <p>Artificial Intelligence manages resources and automates daily activities within Atlas Valley communities.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- What Makes $ARKV Unique -->
-            <div class="unique-features">
-                <h3 class="features-title">🌟 What Makes $ARKV Unique? 🌟</h3>
-                <div class="features-grid">
-                    <div class="feature-card">
-                        <div class="feature-number">1</div>
-                        <h4>Real-World Asset Project</h4>
-                        <p>$ARKV isn't just another digital token. It's a project with real-world value backing it, fueling the development of Atlas Valley's self-sustaining communities.</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-number">2</div>
-                        <h4>Long-Term Sustainability</h4>
-                        <p>By integrating solar panels, wind turbines, and advanced water purification systems, we're building a world where energy and resources are fully self-sufficient.</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-number">3</div>
-                        <h4>Zero Risk Security</h4>
-                        <p>We guarantee zero risks of rug pulls or scams. Our team members will never sell their tokens, ensuring stability and growth.</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-number">4</div>
-                        <h4>AI-Driven Innovation</h4>
-                        <p>The heart of $ARKV lies in AI integration to manage resources and automate daily activities, creating a more efficient and connected living experience.</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-number">5</div>
-                        <h4>Strong Community</h4>
-                        <p>$ARKV is not just a project; it's a movement. Our growing community is the foundation of everything we do, building something powerful together.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Token Distribution -->
-            <div class="token-distribution">
-                <h3 class="distribution-title">📊 Token Distribution & Transparency</h3>
-                <div class="distribution-content">
-                    <div class="distribution-stats">
-                        <div class="stat-item">
-                            <span class="stat-number">1M</span>
-                            <span class="stat-label">Tokens Currently Held</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-number">1M</span>
-                            <span class="stat-label">Tokens Released Monthly</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-number">0%</span>
-                            <span class="stat-label">Risk of Rug Pulls</span>
-                        </div>
-                    </div>
-                    <div class="distribution-text">
-                        <p>Full transparency in supply with controlled token distribution ensuring stability for the community. Our commitment to holding and developing this project ensures long-term growth.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Ecosystem Vision -->
-            <div class="ecosystem-vision">
-                <h3 class="vision-title">🌐 Atlas Valley Ecosystem</h3>
-                <div class="vision-content">
-                    <p class="vision-description">
-                        We don't build products — we craft realities. Atlas Valley is not just a project. It's not a coin. It's not a trend. 
-                        It's a living protocol, a digital ecosystem where your dreams, identity, creativity, and freedom are encoded in every line of data.
-                    </p>
-                    <div class="ecosystem-features">
-                        <div class="ecosystem-item">
-                            <i class="fas fa-user-astronaut"></i>
-                            <h4>Design Your Avatar</h4>
-                            <p>Create your digital identity in our metaverse</p>
-                        </div>
-                        <div class="ecosystem-item">
-                            <i class="fas fa-dna"></i>
-                            <h4>Link Vital Signs</h4>
-                            <p>Connect your biometric data to the ecosystem</p>
-                        </div>
-                        <div class="ecosystem-item">
-                            <i class="fas fa-cube"></i>
-                            <h4>Mine Resources</h4>
-                            <p>Extract value and data with $ARKV</p>
-                        </div>
-                        <div class="ecosystem-item">
-                            <i class="fas fa-users"></i>
-                            <h4>Compete & Collaborate</h4>
-                            <p>Engage in vast, persistent environments</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Call to Action -->
-            <div class="voltark-cta">
-                <h3 class="cta-title">🚀 Join the Revolution</h3>
-                <p class="cta-description">
-                    This is just the beginning! Alpha and Beta phases are coming soon, and we want YOU to be part of the journey.
-                </p>
-                <div class="cta-buttons">
-                    <a href="https://pump.fun/coin/ABC64226vR9kHtjtYCDENostEbCFdtXYvY4o6Gwzpump" target="_blank" class="btn btn-primary">
-                        <i class="fas fa-coins"></i> Get $ARKV
-                    </a>
-                    <a href="https://solscan.io/token/ABC64226vR9kHtjtYCDENostEbCFdtXYvY4o6Gwzpump" target="_blank" class="btn btn-secondary">
-                        <i class="fas fa-chart-line"></i> Track $ARKV
-                    </a>
-                </div>
-                <div class="social-links-voltark">
-                    <a href="https://x.com/atlasvalley123" target="_blank" class="social-link">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    <a href="https://t.me/atlasvalley" target="_blank" class="social-link">
-                        <i class="fab fa-telegram"></i>
-                    </a>
-                    <a href="https://discord.gg/UH3Tvjdwyu" target="_blank" class="social-link">
-                        <i class="fab fa-discord"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Gallery Section -->
-    <section id="gallery" class="gallery">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Atlas Valley Gallery</h2>
-                <p class="section-subtitle">Visualizing our innovative ecosystem</p>
-            </div>
-
-            <div class="gallery-filters">
-                <button class="filter-btn active" data-filter="all">All</button>
-                <button class="filter-btn" data-filter="technology">Technology</button>
-                <button class="filter-btn" data-filter="sustainability">Sustainability</button>
-                <button class="filter-btn" data-filter="community">Community</button>
-                <button class="filter-btn" data-filter="videos">Videos</button>
-            </div>
-
-            <div class="gallery-grid">
-                <div class="gallery-item" data-category="technology">
-                    <img src="resources/images/av1.jpg" alt="Atlas Valley Technology" loading="lazy">
-                    <div class="gallery-overlay">
-                        <h3>Advanced AI Systems</h3>
-                        <p>Cutting-edge artificial intelligence powering autonomous communities</p>
-                    </div>
-                </div>
-                <div class="gallery-item" data-category="sustainability">
-                    <img src="resources/images/av2.jpg" alt="Sustainable Energy" loading="lazy">
-                    <div class="gallery-overlay">
-                        <h3>Renewable Energy</h3>
-                        <p>Solar, wind, and hydrogen power solutions</p>
-                    </div>
-                </div>
-                <div class="gallery-item" data-category="technology">
-                    <img src="resources/images/av3 (2).jpg" alt="Smart Infrastructure" loading="lazy">
-                    <div class="gallery-overlay">
-                        <h3>Smart Infrastructure</h3>
-                        <p>Intelligent systems monitoring and optimizing resources</p>
-                    </div>
-                </div>
-                <div class="gallery-item" data-category="sustainability">
-                    <img src="resources/images/av4.jpg" alt="Green Technology" loading="lazy">
-                    <div class="gallery-overlay">
-                        <h3>Green Technology</h3>
-                        <p>Eco-friendly solutions for a sustainable future</p>
-                    </div>
-                </div>
-                <div class="gallery-item" data-category="community">
-                    <img src="resources/images/av5.jpg" alt="Global Community" loading="lazy">
-                    <div class="gallery-overlay">
-                        <h3>Global Community</h3>
-                        <p>Connecting innovators worldwide</p>
-                    </div>
-                </div>
-                <div class="gallery-item" data-category="technology">
-                    <img src="resources/images/av6.jpg" alt="Advanced Electronics" loading="lazy">
-                    <div class="gallery-overlay">
-                        <h3>Advanced Electronics</h3>
-                        <p>State-of-the-art electronic systems</p>
-                    </div>
-                </div>
-                <div class="gallery-item" data-category="sustainability">
-                    <img src="resources/images/av7.jpg" alt="Water Purification" loading="lazy">
-                    <div class="gallery-overlay">
-                        <h3>Water Purification</h3>
-                        <p>Smart water treatment systems</p>
-                    </div>
-                </div>
-                <div class="gallery-item" data-category="community">
-                    <img src="resources/images/av8.jpg" alt="Collaboration" loading="lazy">
-                    <div class="gallery-overlay">
-                        <h3>Global Collaboration</h3>
-                        <p>International partnerships driving innovation</p>
-                    </div>
-                </div>
-                <div class="gallery-item" data-category="technology">
-                    <img src="resources/images/av9.jpg" alt="AI Development" loading="lazy">
-                    <div class="gallery-overlay">
-                        <h3>AI Development</h3>
-                        <p>Machine learning and neural networks</p>
-                    </div>
-                </div>
-                <div class="gallery-item" data-category="sustainability">
-                    <img src="resources/images/av10.jpg" alt="Eco Systems" loading="lazy">
-                    <div class="gallery-overlay">
-                        <h3>Ecosystem Design</h3>
-                        <p>Self-sustaining environmental systems</p>
-                    </div>
-                </div>
-                <div class="gallery-item" data-category="community">
-                    <img src="resources/images/av11.jpg" alt="Team Work" loading="lazy">
-                    <div class="gallery-overlay">
-                        <h3>Team Innovation</h3>
-                        <p>Collaborative problem-solving approach</p>
-                    </div>
-                </div>
-                <div class="gallery-item" data-category="technology">
-                    <img src="resources/images/av12.jpg" alt="Future Tech" loading="lazy">
-                    <div class="gallery-overlay">
-                        <h3>Future Technology</h3>
-                        <p>Next-generation solutions</p>
-                    </div>
-                </div>
-                <div class="gallery-item" data-category="sustainability">
-                    <img src="resources/images/av13.jpg" alt="Clean Energy" loading="lazy">
-                    <div class="gallery-overlay">
-                        <h3>Clean Energy</h3>
-                        <p>Zero-emission power generation</p>
-                    </div>
-                </div>
-                <div class="gallery-item" data-category="community">
-                    <img src="resources/images/av14.jpg" alt="Global Network" loading="lazy">
-                    <div class="gallery-overlay">
-                        <h3>Global Network</h3>
-                        <p>Worldwide innovation hubs</p>
-                    </div>
-                </div>
-                <div class="gallery-item" data-category="technology">
-                    <img src="resources/images/av15.jpg" alt="Smart Systems" loading="lazy">
-                    <div class="gallery-overlay">
-                        <h3>Smart Systems</h3>
-                        <p>Intelligent automation solutions</p>
-                    </div>
-                </div>
-                
-                <!-- Video Gallery Items -->
-                <div class="gallery-item video-item" data-category="videos">
-                    <div class="video-container">
-                        <video class="gallery-video" preload="metadata" muted>
-                            <source src="resources/videos/IMG_2007.MP4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                        <div class="video-overlay">
-                            <div class="play-button">
-                                <i class="fas fa-play"></i>
-                            </div>
-                            <div class="video-controls">
-                                <div class="video-progress">
-                                    <div class="progress-bar"></div>
-                                </div>
-                                <div class="control-buttons">
-                                    <button class="control-btn play-pause-btn">
-                                        <i class="fas fa-play"></i>
-                                    </button>
-                                    <button class="control-btn mute-btn">
-                                        <i class="fas fa-volume-up"></i>
-                                    </button>
-                                    <span class="video-time">0:00 / 0:00</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="gallery-overlay">
-                        <h3>Atlas Valley Innovation</h3>
-                        <p>Revolutionary technology in action</p>
-                    </div>
-                </div>
-                
-                <div class="gallery-item video-item" data-category="videos">
-                    <div class="video-container">
-                        <video class="gallery-video" preload="metadata" muted>
-                            <source src="resources/videos/IMG_2008.MP4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                        <div class="video-overlay">
-                            <div class="play-button">
-                                <i class="fas fa-play"></i>
-                            </div>
-                            <div class="video-controls">
-                                <div class="video-progress">
-                                    <div class="progress-bar"></div>
-                                </div>
-                                <div class="control-buttons">
-                                    <button class="control-btn play-pause-btn">
-                                        <i class="fas fa-play"></i>
-                                    </button>
-                                    <button class="control-btn mute-btn">
-                                        <i class="fas fa-volume-up"></i>
-                                    </button>
-                                    <span class="video-time">0:00 / 0:00</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="gallery-overlay">
-                        <h3>Sustainable Solutions</h3>
-                        <p>Green technology transforming the future</p>
-                    </div>
-                </div>
-                
-                <div class="gallery-item video-item" data-category="videos">
-                    <div class="video-container">
-                        <video class="gallery-video" preload="metadata" muted>
-                            <source src="resources/videos/IMG_2009.MP4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                        <div class="video-overlay">
-                            <div class="play-button">
-                                <i class="fas fa-play"></i>
-                            </div>
-                            <div class="video-controls">
-                                <div class="video-progress">
-                                    <div class="progress-bar"></div>
-                                </div>
-                                <div class="control-buttons">
-                                    <button class="control-btn play-pause-btn">
-                                        <i class="fas fa-play"></i>
-                                    </button>
-                                    <button class="control-btn mute-btn">
-                                        <i class="fas fa-volume-up"></i>
-                                    </button>
-                                    <span class="video-time">0:00 / 0:00</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="gallery-overlay">
-                        <h3>Global Community</h3>
-                        <p>Connecting innovators worldwide</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Join Our Mission</h2>
-                <p class="section-subtitle">Be part of the revolution that's shaping tomorrow</p>
-            </div>
-
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h3>Get in Touch</h3>
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <div>
-                            <h4>Email</h4>
-                            <p><a href="mailto:atlasviking.98@gmail.com">atlasviking.98@gmail.com</a></p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <div>
-                            <h4>Phone</h4>
-                            <p>+46 76 450 2915</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div>
-                            <h4>Location</h4>
-                            <p>Stockholm, Sweden </p>
-                        </div>
-                    </div>
-                    <div class="social-links">
-                        <a href="https://x.com/atlasvalley123" target="_blank" class="social-link">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="https://t.me/atlasvalley" target="_blank" class="social-link">
-                            <i class="fab fa-telegram"></i>
-                        </a>
-                        <a href="https://instagram.com/atlasvalley123" target="_blank" class="social-link">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="https://facebook.com/share/1EEjto9yiK" target="_blank" class="social-link">
-                            <i class="fab fa-facebook"></i>
-                        </a>
-                        <a href="https://discord.gg/UH3Tvjdwyu" target="_blank" class="social-link">
-                            <i class="fab fa-discord"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="contact-form">
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <input type="text" id="name" name="name" placeholder="Your Name" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" id="email" name="email" placeholder="Your Email" required>
-                        </div>
-                        <div class="form-group">
-                            <select id="interest" name="interest" required>
-                                <option value="">Select Your Interest</option>
-                                <option value="volunteer">Become a Volunteer</option>
-                                <option value="donation">Make a Donation</option>
-                                <option value="partnership">Partnership Opportunity</option>
-                                <option value="collaboration">Technical Collaboration</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">
-                            <i class="fas fa-paper-plane"></i> Send Message
-                        </button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Atlas Valley</h3>
-                    <p>Building the future of autonomous living through innovative technology and global collaboration.</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#gallery">Gallery</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Follow Us</h4>
-                    <div class="footer-social">
-                        <a href="https://x.com/atlasvalley123" target="_blank"><i class="fab fa-twitter"></i></a>
-                        <a href="https://t.me/atlasvalley" target="_blank"><i class="fab fa-telegram"></i></a>
-                        <a href="https://instagram.com/atlasvalley123" target="_blank"><i class="fab fa-instagram"></i></a>
-                        <a href="https://facebook.com/share/1EEjto9yiK" target="_blank"><i class="fab fa-facebook"></i></a>
-                        <a href="https://discord.gg/UH3Tvjdwyu" target="_blank"><i class="fab fa-discord"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <div class="credits-section">
-                    <div class="credits-content">
-                        <h4 class="credits-title">🌟 Project Credits 🌟</h4>
-                        <p class="credits-text">
-                            All credit goes to <span class="credit-name">panthera_leo</span> and <span class="credit-name">elf_wizard</span> 
-                            for creating this innovative project. We are the visionaries behind Atlas Valley's revolutionary ecosystem.
-                        </p>
-                        <div class="creators-info">
-                            <div class="creator">
-                                <div class="creator-icons">
-                                    <i class="fas fa-crown"></i>
-                                    <i class="fas fa-paw"></i>
-                                    <i class="fas fa-sword"></i>
-                                </div>
-                                <span>panthera_leo</span>
-                            </div>
-                            <div class="creator">
-                                <div class="creator-icons">
-                                    <i class="fas fa-gem"></i>
-                                    <i class="fas fa-dragon"></i>
-                                    <i class="fas fa-wand"></i>
-                                </div>
-                                <span>elf_wizard</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="copyright-section">
-                    <p>&copy; 2024 Atlas Valley. All rights reserved. | Created by panthera_leo & elf_wizard | Based in Stockholm, Sweden</p>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Lightbox -->
-    <div id="lightbox" class="lightbox">
-        <span class="lightbox-close">&times;</span>
-        <img id="lightbox-img" src="" alt="">
-        <div class="lightbox-content">
-            <h3 id="lightbox-title"></h3>
-            <p id="lightbox-description"></p>
-        </div>
+<div class="header">
+  <div>
+    <div class="logo-text">⬡ ATLAS VALLEY</div>
+    <div class="logo-sub">Arbetsschema &amp; Lön — År 2026</div>
+  </div>
+  <div class="theme-toggle-wrap">
+    <span class="badge">APS</span>
+    <span class="badge">VERONA</span>
+    <div class="theme-toggle" onclick="toggleTheme()" title="Cambia tema">
+      <span id="themeLabel">SCURO</span>
+      <div class="toggle-dot" id="toggleDot"></div>
     </div>
+  </div>
+</div>
 
-    <script src="resources/js/script.js"></script>
-</body>
-</html>
+<div class="controls">
+  <span class="ctrl-label">Persona 1:</span>
+  <span style="font-family:'Orbitron',sans-serif;font-size:13px;color:var(--cyan);letter-spacing:2px;padding:6px 4px">OUSSAMA</span>
+  <span class="ctrl-label" style="margin-left:12px">Vista:</span>
+  <select id="viewSel" onchange="render()">
+    <option value="month" selected>Mensile</option>
+    <option value="summary">Riepilogo Annuale</option>
+  </select>
+  <span class="ctrl-label" style="margin-left:12px">Paga oraria default (€):</span>
+  <input type="number" id="defPaga" value="7" min="0" step="0.5" style="width:70px" onchange="render()">
+</div>
+
+<div class="tab-bar" id="tabBar"></div>
+<div class="content" id="mainContent"></div>
+
+<div class="footer-bar">
+  <span>ATLAS VALLEY APS · 2026 · <span style="color:var(--cyan)">pantheraleo-atlasvalley.github.io</span></span>
+  <button class="export-btn" onclick="exportCSV()">↓ EXPORT CSV</button>
+</div>
+
+<script>
+const MONTHS_SV=['JANUARI','FEBRUARI','MARS','APRIL','MAJ','JUNI','JULI','AUGUSTI','SEPTEMBER','OKTOBER','NOVEMBER','DECEMBER'];
+const MONTHS_IT=['Gennaio','Febbraio','Marzo','Aprile','Maggio','Giugno','Luglio','Agosto','Settembre','Ottobre','Novembre','Dicembre'];
+const DAYS_IT=['Lunedì','Martedì','Mercoledì','Giovedì','Venerdì','Sabato','Domenica'];
+// Only one employee now
+const EMP_NAME = 'OUSSAMA';
+const EMP_IDX = 0;
+
+// Pre-load all known shift data for Oussama into data{}
+// key format: empIdx_year_month_day
+let data = {
+  '0_2026_5_1':  {inizio:'13:30',fine:'17:30',pausa:'',paga:'7',acconto:'0',note:''},
+  '0_2026_5_2':  {inizio:'08:30',fine:'10:30',pausa:'',paga:'7',acconto:'10',note:''},
+  '0_2026_5_3':  {inizio:'10:00',fine:'16:30',pausa:'1',paga:'7',acconto:'0',note:''},
+  '0_2026_5_4':  {inizio:'08:00',fine:'17:00',pausa:'1',paga:'7',acconto:'10',note:''},
+  '0_2026_5_5':  {inizio:'07:30',fine:'13:00',pausa:'',paga:'7',acconto:'40',note:'fanale sx bak'},
+  '0_2026_5_8':  {inizio:'08:30',fine:'18:30',pausa:'3.5',paga:'7',acconto:'10',note:'tanken först'},
+  '0_2026_5_9':  {inizio:'08:00',fine:'16:00',pausa:'',paga:'7',acconto:'50',note:''},
+  '0_2026_5_13': {inizio:'00:00',fine:'01:00',pausa:'1',paga:'7',acconto:'50',note:'moad -110'},
+  '0_2026_5_14': {inizio:'08:00',fine:'16:00',pausa:'1',paga:'7',acconto:'0',note:'abbas'},
+  '0_2026_5_15': {inizio:'08:00',fine:'19:00',pausa:'11',paga:'7',acconto:'0',note:'aina'},
+  '0_2026_5_16': {inizio:'08:00',fine:'16:00',pausa:'1',paga:'7',acconto:'10',note:''},
+  '0_2026_5_17': {inizio:'08:00',fine:'16:00',pausa:'1',paga:'7',acconto:'0',note:''},
+  '0_2026_5_18': {inizio:'08:00',fine:'17:00',pausa:'1',paga:'7',acconto:'0',note:''},
+  // Day 25: acconto 240
+  '0_2026_5_25': {inizio:'',fine:'',pausa:'',paga:'7',acconto:'240',note:''},
+};
+
+let currentMonth = new Date().getMonth();
+let isLight = false;
+
+function toggleTheme(){
+  isLight=!isLight;
+  document.body.classList.toggle('light',isLight);
+  document.getElementById('themeLabel').textContent=isLight?'CHIARO':'SCURO';
+}
+
+function getDaysInMonth(y,m){return new Date(y,m+1,0).getDate()}
+function getDow(y,m,d){return (new Date(y,m,d).getDay()+6)%7}
+
+function calcOre(inizio,fine,pausa){
+  if(!inizio||!fine) return null;
+  const [h1,m1]=inizio.split(':').map(Number);
+  const [h2,m2]=fine.split(':').map(Number);
+  let ore=(h2*60+m2-h1*60-m1)/60;
+  if(ore<0) ore+=24;
+  ore-=(parseFloat(pausa)||0);
+  return Math.max(0,Math.round(ore*100)/100);
+}
+
+function key(emp,y,m,d){return `${emp}_${y}_${m}_${d}`}
+function getVal(k,field){return (data[k]&&data[k][field]!==undefined)?data[k][field]:''}
+function setVal(k,field,val){if(!data[k])data[k]={};data[k][field]=val;refreshTotals()}
+
+function refreshTotals(){
+  const defPaga=parseFloat(document.getElementById('defPaga').value)||7;
+  for(let m=0;m<12;m++){
+    let totOre=0,totDov=0;
+    const days=getDaysInMonth(2026,m);
+    for(let d=1;d<=days;d++){
+      const k=key(EMP_IDX,2026,m,d);
+      const inizio=getVal(k,'inizio'),fine=getVal(k,'fine'),pausa=getVal(k,'pausa');
+      const paga=parseFloat(getVal(k,'paga'))||defPaga;
+      const acc=parseFloat(getVal(k,'acconto'))||0;
+      const ore=calcOre(inizio,fine,pausa);
+      const oreEl=document.getElementById(`ore_0_${m}_${d}`);
+      const totEl=document.getElementById(`tot_0_${m}_${d}`);
+      if(ore!==null){
+        const tot=Math.round((ore*paga-acc)*100)/100;
+        if(oreEl) oreEl.textContent=ore.toFixed(2);
+        if(totEl) totEl.textContent='€'+tot.toFixed(2);
+        totOre+=ore; totDov+=tot;
+      } else {
+        // Even if no hours, show acconto deduction if any
+        const acc2=parseFloat(getVal(k,'acconto'))||0;
+        if(acc2>0){
+          if(oreEl) oreEl.textContent='—';
+          if(totEl) totEl.textContent='€'+(-acc2).toFixed(2);
+          totDov-=acc2;
+        } else {
+          if(oreEl) oreEl.textContent='—';
+          if(totEl) totEl.textContent='—';
+        }
+      }
+    }
+    const sfOre=document.getElementById(`sf_ore_0_${m}`);
+    const sfTot=document.getElementById(`sf_tot_0_${m}`);
+    if(sfOre) sfOre.textContent=totOre.toFixed(2)+'h';
+    if(sfTot) sfTot.textContent='€'+totDov.toFixed(2);
+    const msOre=document.getElementById(`ms_ore_0_${m}`);
+    const msTot=document.getElementById(`ms_tot_0_${m}`);
+    if(msOre) msOre.innerHTML='<span>'+totOre.toFixed(1)+'h</span>';
+    if(msTot) msTot.innerHTML='<span>€'+totDov.toFixed(2)+'</span>';
+  }
+}
+
+function renderTabs(){
+  const bar=document.getElementById('tabBar');
+  const view=document.getElementById('viewSel').value;
+  if(view!=='month'){bar.innerHTML='';return}
+  bar.innerHTML=MONTHS_SV.map((mn,i)=>
+    `<div class="tab${i===currentMonth?' active':''}" onclick="currentMonth=${i};renderTabs();renderMain()">${mn.substring(0,3)}</div>`
+  ).join('');
+}
+
+function renderMain(){
+  const view=document.getElementById('viewSel').value;
+  const defPaga=parseFloat(document.getElementById('defPaga').value)||7;
+  const content=document.getElementById('mainContent');
+  if(view==='summary'){renderSummary(content,defPaga);return}
+  const m=currentMonth;
+  const days=getDaysInMonth(2026,m);
+  let rows='';
+  for(let d=1;d<=days;d++){
+    const dow=getDow(2026,m,d);
+    const k=key(EMP_IDX,2026,m,d);
+    const isWe=dow>=5;
+    const isToday=(new Date().getFullYear()===2026&&new Date().getMonth()===m&&new Date().getDate()===d);
+    const inizio=getVal(k,'inizio'),fine=getVal(k,'fine');
+    const pausa=getVal(k,'pausa');
+    const paga=getVal(k,'paga')||defPaga;
+    const acc=getVal(k,'acconto')||'0';
+    const note=getVal(k,'note')||'';
+    const ore=calcOre(inizio,fine,pausa);
+    let tot='—';
+    if(ore!==null){
+      tot='€'+(ore*parseFloat(paga)-parseFloat(acc)).toFixed(2);
+    } else if(parseFloat(acc)>0){
+      tot='€'+(-parseFloat(acc)).toFixed(2);
+    }
+    rows+=`<tr class="${isWe?'weekend':''}${isToday?' today':''}">
+      <td style="color:var(--muted);font-size:11px;padding-left:12px">${d.toString().padStart(2,'0')}</td>
+      <td class="day-name${isWe?'':' workday'}">${DAYS_IT[dow]}</td>
+      <td><input type="time" value="${inizio}" onchange="setVal('${k}','inizio',this.value);refreshTotals()"></td>
+      <td><input type="time" value="${fine}" onchange="setVal('${k}','fine',this.value);refreshTotals()"></td>
+      <td><input type="number" value="${pausa}" placeholder="0" min="0" step="0.25" style="width:55px" onchange="setVal('${k}','pausa',this.value);refreshTotals()"></td>
+      <td class="computed" id="ore_0_${m}_${d}">${ore!==null?ore.toFixed(2):'—'}</td>
+      <td><input type="number" class="paga" value="${paga}" min="0" step="0.5" style="width:60px" onchange="setVal('${k}','paga',this.value);refreshTotals()"></td>
+      <td><input type="number" class="acc" value="${acc}" placeholder="0" min="0" step="1" style="width:60px" onchange="setVal('${k}','acconto',this.value);refreshTotals()"></td>
+      <td class="total-dovuto" id="tot_0_${m}_${d}">${tot}</td>
+      <td class="note-cell"><input type="text" value="${note}" placeholder="..." onchange="setVal('${k}','note',this.value)"></td>
+    </tr>`;
+  }
+  content.innerHTML=`
+  <div class="month-block">
+    <div class="month-header">
+      <div class="month-title">${MONTHS_SV[m]} 2026 — ${EMP_NAME}</div>
+      <div class="month-stats">
+        <div class="mstat">Ore: <span id="ms_ore_0_${m}"><span>0.0h</span></span></div>
+        <div class="mstat">Totale: <span id="ms_tot_0_${m}"><span>€0.00</span></span></div>
+      </div>
+    </div>
+    <table>
+      <thead><tr>
+        <th style="width:32px">#</th>
+        <th style="text-align:left">Giorno</th>
+        <th>Inizio</th><th>Fine</th>
+        <th>Pausa (h)</th><th>Ore</th>
+        <th>Paga (€)</th><th>Acconto (€)</th>
+        <th>Totale</th><th>Note</th>
+      </tr></thead>
+      <tbody>${rows}</tbody>
+      <tfoot><tr class="tfoot-row">
+        <td colspan="5" style="text-align:right;color:var(--muted);font-size:9px">TOTALE ${MONTHS_SV[m]}</td>
+        <td class="sum-ore" id="sf_ore_0_${m}">0.00h</td>
+        <td></td><td></td>
+        <td class="sum-tot" id="sf_tot_0_${m}">€0.00</td>
+        <td></td>
+      </tr></tfoot>
+    </table>
+  </div>`;
+  refreshTotals();
+}
+
+function renderSummary(content,defPaga){
+  let grandOre=0,grandDov=0,grandAcc=0;
+  let rows='';
+  for(let m=0;m<12;m++){
+    let totOre=0,totAcc=0,totDov=0;
+    const days=getDaysInMonth(2026,m);
+    for(let d=1;d<=days;d++){
+      const k=key(EMP_IDX,2026,m,d);
+      const inizio=getVal(k,'inizio'),fine=getVal(k,'fine'),pausa=getVal(k,'pausa');
+      const paga=parseFloat(getVal(k,'paga'))||defPaga;
+      const acc=parseFloat(getVal(k,'acconto'))||0;
+      const ore=calcOre(inizio,fine,pausa);
+      if(ore!==null){totOre+=ore;totAcc+=acc;totDov+=ore*paga-acc;}
+      else if(acc>0){totAcc+=acc;totDov-=acc;}
+    }
+    grandOre+=totOre;grandAcc+=totAcc;grandDov+=totDov;
+    if(totOre>0||totAcc>0) rows+=`<div class="scard-row"><span class="scard-label">${MONTHS_IT[m]}</span><span class="scard-val blue">${totOre.toFixed(1)}h · €${totDov.toFixed(2)}</span></div>`;
+  }
+  if(!rows) rows='<div class="scard-row"><span class="scard-label" style="font-size:11px">Nessun dato inserito</span></div>';
+  content.innerHTML=`<div class="summary-panel"><div class="scard">
+    <div class="scard-name">${EMP_NAME}</div>
+    ${rows}
+    <div class="scard-row" style="margin-top:8px;border-top:1px solid var(--border);padding-top:8px">
+      <span class="scard-label">Ore totali</span><span class="scard-val">${grandOre.toFixed(1)}h</span>
+    </div>
+    <div class="scard-row">
+      <span class="scard-label">Acconti versati</span><span class="scard-val" style="color:var(--acc-color)">€${grandAcc.toFixed(2)}</span>
+    </div>
+    <div class="scard-row">
+      <span class="scard-label">Totale dovuto</span><span class="scard-val blue">€${grandDov.toFixed(2)}</span>
+    </div>
+    <div class="netto-bar"><div class="netto-fill" style="width:${grandOre>0?Math.min(100,grandOre/500*100):0}%"></div></div>
+  </div></div>
+  <div style="color:var(--muted);font-size:11px;font-family:'Orbitron',sans-serif;letter-spacing:2px;text-align:center;padding:12px">
+    SELEZIONA UN MESE DAL MENU PER INSERIRE I TURNI
+  </div>`;
+}
+
+function exportCSV(){
+  const defPaga=parseFloat(document.getElementById('defPaga').value)||7;
+  let csv='Data,Giorno,Inizio,Fine,Pausa,Ore,Paga,Acconto,Totale,Note\n';
+  for(let m=0;m<12;m++){
+    const days=getDaysInMonth(2026,m);
+    for(let d=1;d<=days;d++){
+      const k=key(EMP_IDX,2026,m,d);
+      const inizio=getVal(k,'inizio'),fine=getVal(k,'fine');
+      const acc=parseFloat(getVal(k,'acconto'))||0;
+      if(!inizio&&!fine&&acc===0) continue;
+      const pausa=getVal(k,'pausa')||'0';
+      const paga=parseFloat(getVal(k,'paga'))||defPaga;
+      const ore=calcOre(inizio,fine,pausa)||0;
+      const tot=(ore*paga-acc).toFixed(2);
+      const dow=getDow(2026,m,d);
+      const note=getVal(k,'note')||'';
+      csv+=`${d.toString().padStart(2,'0')}/${(m+1).toString().padStart(2,'0')}/2026,${DAYS_IT[dow]},${inizio},${fine},${pausa},${ore.toFixed(2)},${paga},${acc},${tot},"${note}"\n`;
+    }
+  }
+  const blob=new Blob([csv],{type:'text/csv'});
+  const a=document.createElement('a');
+  a.href=URL.createObjectURL(blob);
+  a.download=`AtlasValley_${EMP_NAME}_2026.csv`;
+  a.click();
+}
+
+function render(){renderTabs();renderMain()}
+render();
+</script>
+</body></html>
